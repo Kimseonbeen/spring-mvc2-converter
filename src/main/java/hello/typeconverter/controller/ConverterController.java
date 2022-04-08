@@ -24,6 +24,7 @@ public class ConverterController {
         IpPort ipPort = new IpPort("127.0.0.1", 8080);
         Form form = new Form(ipPort);
         model.addAttribute("form", form);
+        System.out.println("form = " + form);
 
         return "converter-form";
     }
